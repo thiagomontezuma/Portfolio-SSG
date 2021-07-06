@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- <meta name="description" content="Thiago Montezuma Personal Website featuring projects worked on, about myself, custom themes, and a way to contact me." /> -->
+<!-- <title>Thiago Montezuma Personal Website</title> -->
+<link rel="stylesheet" href="/css/bootstrap-grid.css" />
+<link rel="stylesheet" href="/css/main.css" />
+
+<!-- Meta tags -->
+<!-- <meta property="og:title" content="Thiago Montezuma Personal Website" />
+<meta property="og:description" content="Thiago Montezuma Personal Website featuring projects worked on, about myself, custom themes, and a way to contact me." />
+<meta property="og:url" content="https://www.thiagomontezuma.com" /> -->
+<!-- <meta property="og:image" content="https://www.thiagomontezuma.com/images/tmdlogo310.png" /> -->
+<meta property="og:locale" content="en_US" />
+<meta name="robots" content="index,follow" />
+<meta name="theme-color" content="#1C1C1C" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F24RSF0Z29"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-F24RSF0Z29');
+</script>
+
+<!-- Web General Icons -->
+<link rel="icon" href="/images/tmdlogo16.png" sizes="16x16" />
+<link rel="icon" href="/images/tmdlogo32.png" sizes="32x32" />
+<link rel="icon" href="/images/tmdlogo48.png" sizes="48x48" />
+<link rel="icon" href="/images/tmdlogo57.png" sizes="57x57" />
+<link rel="icon" href="/images/tmdlogo62.png" sizes="62x62" />
+<link rel="icon" href="/images/tmdlogo76.png" sizes="76x76" />
+<link rel="icon" href="/images/tmdlogo96.png" sizes="96x96" />
+<link rel="icon" href="/images/tmdlogo128.png" sizes="128x128" />
+<link rel="icon" href="/images/tmdlogo192.png" sizes="192x192" />
+<link rel="icon" href="/images/tmdlogo228.png" sizes="228x228" />
+<!-- Android Icon -->
+<link rel="shortcut icon" sizes="196x196" href="/images/tmdlogo196.png" />
+<!-- iOS Icons -->
+<link rel="apple-touch-icon" href="/images/tmdlogo128.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/images/tmdlogo180.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/images/tmdlogo152.png" />
+<link rel="apple-touch-icon" sizes="167x167" href="/images/tmdlogo167.png" />
+<!-- Windows 8 IE 10 Icons -->
+<meta name="msapplication-TileColor" content="#1C1C1C" />
+<meta name="msapplication-TileImage" content="/images/tmdlogo144.png" />
+<!-- Windows 8.1 + IE11 and above -->
+<meta name="msapplication-config" content="/browserconfig.xml" />
+
+<script defer src="https://kit.fontawesome.com/bf1c73beb5.js" crossorigin="anonymous"></script>
+<script defer src="/js/app.js"></script>
+
+<title>Homepage - Thiago Montezuma Personal Website</title>
+<meta name="description"
+  content="Thiago Montezuma Personal Website featuring projects worked on, about myself, custom themes, and a way to contact me." />
+<meta rel="canonical" href="https://www.thiagomontezuma.com" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Homepage - Thiago Montezuma Personal Website" />
+<meta property="og:description"
+  content="Thiago Montezuma Personal Website featuring projects worked on, about myself, custom themes, and a way to contact me." />
+<meta property="og:url" content="https://www.thiagomontezuma.com" />
+<meta property="og:image" content="https://www.thiagomontezuma.com/images/tmdlogo310.png" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Homepage - Thiago Montezuma Personal Website" />
+<meta property="twitter:description"
+  content="Thiago Montezuma Personal Website featuring projects worked on, about myself, custom themes, and a way to contact me." />
+  </head>
+  <body class="dark">
+    <header>
+  <div class="header-logo">
+    <a class="header-links" href="/">
+      <img id="headerLogo" class="header-logo-img" src="/images/logo-black.png" alt="Site-Logo" />
+    </a>
+  </div>
+  <div class="header-nav">
+    <a class="header-links" href="/blog">Blog</a>
+    <a class="header-links" href="/about">About Me</a>
+    <a class="header-links" href="/contact">Contact</a>
+  </div>
+</header>
+    <nav>
+  <ul>
+    <li class="nav-option">
+      <button id="ambientColor" class="nav-button" aria-label="Light Theme">
+        <i class="fas fa-sun nav-i"></i>
+        <span class="nav-text">Light</span>
+      </button>
+    </li>
+    <li class="nav-option">
+      <button id="blog" class="nav-button" aria-label="Blog">
+        <i class="fas fa-file-alt nav-i"></i>
+        <span class="nav-text">Blog</span>
+      </button>
+    </li>
+    <li class="nav-option">
+      <button id="terminal" class="nav-button" value="off" onclick="terminalInit()" aria-label="Terminal Theme">
+        <i class="fas fa-terminal nav-i"></i>
+        <span class="nav-text">Terminal</span>
+      </button>
+    </li>
+    <li class="nav-option">
+      <button id="contact" class="nav-button" aria-label="Contact">
+        <i class="fas fa-comment-dots nav-i"></i>
+        <span class="nav-text">Contact</span>
+      </button>
+    </li>
+  </ul>
+</nav>
+    <main>
+      <div class="terminal-row" id="terminalDiv">
+  <p class="terminal-header">Hi! Type about, contact, or projects for more information. If you feel lost, type help.</p>
+  <p class="terminal-text">client@TMD:~$</p>
+  <input id="terminalInput" class="terminal-input" type="text" onkeydown="terminalEnter(this)" />
+</div>
+      
+<div id="mainDivBlock">
+  <section class="presentation">
+    <div class="presentation-column">
+      <h2 class="presentation-column-title" id="typewriter"></h2>
+    </div>
+  </section>
+  <section class="introduction">
+    <p class="introdution-text">
+      Website programming, design, and development are my major skills being put to experience. I thrive on goals
+      and challenges as it can be seen in my whole career. I can build and improve websites and web apps. My
+      teamwork and participatory skills
+      makes me able to develop new functions and open to new opportunities and challenges.
+    </p>
+  </section>
+  <section class="experience">
+    <div class="experience-header">
+      <h3 class="experience-header-title">Experience</h3>
+      <hr class="experience-hr" />
+    </div>
+    <div class="experience-row">
+      <div class="experience-column">
+        <a href="/project-trading" aria-label="Trading System Analysis Project">
+          <img src="/images/trading-450x300.png" class="experience-column-img" />
+        </a>
+      </div>
+      <div class="experience-column">
+        <div class="experience-topic">
+          <h3 class="experience-column-title">Trading System Analysis</h3>
+          <h4 class="experience-column-subtitle">Web App Developer with React</h4>
+          <h5 class="experience-column-topic-title">Developed Areas</h5>
+          <ul class="experience-column-topic">
+            <li>Develop a web app capable of gathering real-time trading information from WebSockets and displaying
+              it according to user’s own strategies to facilitate trading.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="experience-row">
+      <div class="experience-column">
+        <a href="/project-metronomo" aria-label="Metronomo Project">
+          <img src="/images/metronomo-450x300.png" class="experience-column-img" />
+        </a>
+      </div>
+      <div class="experience-column">
+        <div class="experience-topic">
+          <h3 class="experience-column-title">Metronomo.co</h3>
+          <h4 class="experience-column-subtitle">Web App Developer with React</h4>
+          <h5 class="experience-column-topic-title">Developed Areas</h5>
+          <ul class="experience-column-topic">
+            <li>Develop a progressive web app capable of beeping according to the user’s desired bpm, while being
+              fully designed to work effortlessly on mobile devices.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="experience-row">
+      <div class="experience-column">
+        <a href="/project-cllean" aria-label="Cllean Project">
+          <img src="/images/cllean-450x300.png" class="experience-column-img" />
+        </a>
+      </div>
+      <div class="experience-column">
+        <div class="experience-topic">
+          <h3 class="experience-column-title">Cllean – We Clean It For You!</h3>
+          <h4 class="experience-column-subtitle">Website & Web App Developer</h4>
+          <h5 class="experience-column-topic-title">Developed Areas</h5>
+          <ul class="experience-column-topic">
+            <li class="experience-column-topic-item">Develop a web app capable of scheduling services and process
+              payments for the services.</li>
+            <li>Create the web app landing page to explain the app features and to do the marketing.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="experience-row">
+      <div class="experience-column">
+        <a href="/project-tecnocar" aria-label="Tecnocar Project">
+          <img src="/images/tecnocar-450x300.png" class="experience-column-img" />
+        </a>
+      </div>
+      <div class="experience-column">
+        <div class="experience-topic">
+          <h3 class="experience-column-title">Tecnocar Serviços Eletrônica Automotiva LTDA</h3>
+          <h4 class="experience-column-subtitle">Website Programmer & Designer</h4>
+          <h5 class="experience-column-topic-title">Developed Areas</h5>
+          <ul class="experience-column-topic">
+            <li class="experience-column-topic-item">Create a company website showing the services provided and a
+              Scheduling tool.</li>
+            <li>Develop an e-commerce website to show and process online services payment.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="experience-row">
+      <div class="experience-column">
+        <div style="cursor: initial">
+          <img src="/images/ced-450x300.png" class="experience-column-img" />
+        </div>
+      </div>
+      <div class="experience-column">
+        <div class="experience-topic">
+          <h3 class="experience-column-title">CED Auto Center</h3>
+          <h4 class="experience-column-subtitle">IT Junior</h4>
+          <h5 class="experience-column-topic-title">Developed Areas</h5>
+          <ul class="experience-column-topic">
+            <li class="experience-column-topic-item">Integrate the company’s computers over the wired and wireless
+              network.</li>
+            <li>Solve any problem that might appear on the system.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="education">
+    <div class="education-header">
+      <h3 class="education-header-title">Education</h3>
+      <hr class="education-hr" />
+    </div>
+    <div class="education-row">
+      <div class="education-column education-images-container">
+        <img src="/images/bc_logo.png" class="education-column-img"
+          style="background-color: #005596; border-radius: 5px; padding: 15%" />
+      </div>
+      <div class="education-column">
+        <div class="education-topic">
+          <h3 class="education-column-title">Broward College</h3>
+          <h4 class="education-column-subtitle">A.A. in Computer Science</h4>
+          <ul class="education-column-topic">
+            <li>President's List & Honors College; 4.0 GPA.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="education-row">
+      <div class="education-column education-images-container">
+        <img src="/images/ari_logo.png" class="education-column-img"
+          style="background-color: #f1f1f1; border-radius: 5px; padding: 15%" />
+      </div>
+      <div class="education-column">
+        <div class="education-topic">
+          <h3 class="education-column-title">Ari de Sá Cavalcante High & Middle School</h3>
+          <ul class="education-column-topic">
+            <li>Honor Roll Student; 3.8/4.0 GPA.</li>
+            <li>Best Student of the Class for 5 consecutive years & Best Student of the School on Senior Year.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="technical-skills">
+    <div class="technical-header">
+      <h3 class="technical-header-title">Technical Skills</h3>
+      <hr class="technical-hr" />
+    </div>
+    <div class="technical-row">
+      <div class="technical-column">
+        <div class="technical-topic">
+          <p class="technical-topic-item">HTML, CSS, JavaScript & Python</p>
+          <p class="technical-topic-item">React, Swift & SASS</p>
+          <p class="technical-topic-item">Website Design</p>
+          <p class="technical-topic-item" style="margin: 0">Video & Image Editing</p>
+        </div>
+      </div>
+      <div class="technical-column technical-images-container">
+        <img src="/images/languageslogos.png" class="technical-column-img" />
+      </div>
+    </div>
+  </section>
+  <section class="skills">
+    <div class="skills-header">
+      <h3 class="skills-header-title">Soft Skills</h3>
+      <hr class="skills-hr" />
+    </div>
+    <div class="skills-row">
+      <div class="skills-column">
+        <div class="skills-topic">
+          <ul class="skills-column-topic">
+            <li>Hardworking</li>
+            <li>Teamwork</li>
+            <li>Attention to Detail</li>
+            <li>Analytical Thinking</li>
+          </ul>
+        </div>
+      </div>
+      <div class="skills-column">
+        <div class="skills-topic">
+          <ul class="skills-column-topic">
+            <li>Communication</li>
+            <li>Work Ethic</li>
+            <li>Respectfulness</li>
+            <li>Willingness to learn</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="languages-interests">
+    <div class="languages-interests-row">
+      <div class="languages-column">
+        <div class="languages-header">
+          <h3 class="languages-header-title">Languages</h3>
+          <hr class="languages-hr" />
+        </div>
+        <div class="languages-topic" style="font-size: 16px">
+          <div class="language-topic-items-container">
+            <div class="languages-topic-title-container">
+              <p class="languages-topic-title">English</p>
+            </div>
+            <div class="languages-topic-dots-section">
+              <div class="languages-topic-dots-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="languages-topic-dots-description-container">
+                <span class="languages-topic-dots-description">Fluent</span>
+              </div>
+            </div>
+          </div>
+          <div class="language-topic-items-container">
+            <div class="languages-topic-title-container">
+              <p class="languages-topic-title">Portuguese</p>
+            </div>
+            <div class="languages-topic-dots-section">
+              <div class="languages-topic-dots-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="languages-topic-dots-description-container">
+                <span class="languages-topic-dots-description">Fluent</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="language-topic-items-container">
+            <div class="languages-topic-title-container">
+              <p class="languages-topic-title">Spanish</p>
+            </div>
+            <div class="languages-topic-dots-section">
+              <div class="languages-topic-dots-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot dot-gray"></span>
+                <span class="dot dot-gray"></span>
+                <span class="dot dot-gray"></span>
+              </div>
+              <div class="languages-topic-dots-description-container">
+                <span class="languages-topic-dots-description">Basic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="interests-column">
+        <div class="interests-header">
+          <h3 class="interests-header-title">Interests</h3>
+          <hr class="interests-hr" />
+        </div>
+        <div class="interests-topic">
+          <ul class="interests-column-topic">
+            <li class="interests-column-topic-li" id="interestGuitar">Play the Guitar</li>
+            <li class="interests-column-topic-li" id="interestElectronic">Fix Electronics</li>
+            <li class="interests-column-topic-li" id="interestLearning">Learn New Things</li>
+            <li class="interests-column-topic-li" id="interestGame">Video Games</li>
+            <li class="interests-column-topic-li" id="interestMusic">Listen to Music</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta">
+    <h3 class="cta-title">Get my Printer Friendly Resume</h3>
+    <button class="cta-button" onclick="window.open('/files/ThiagoMontezumaResume.pdf', '_blank');">View</button>
+  </section>
+</div>
+    </main>
+    <footer>
+  <div class="footer-social">
+    <div class="footer-social-image-container">
+      <a style="color: inherit; outline: none" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCzzchqImnr08Fu3aPcz078Q" aria-label="Thiago Montezuma Youtube Channel">
+        <i class="fab fa-youtube-square"></i>
+      </a>
+    </div>
+    <div class="footer-social-image-container">
+      <a style="color: inherit; outline: none" target="_blank" rel="noopener" href="https://www.instagram.com/thiagomontezuma_" aria-label="Thiago Montezuma Instagram">
+        <i class="fab fa-instagram-square"></i>
+      </a>
+    </div>
+    <div class="footer-social-image-container">
+      <a style="color: inherit; outline: none" target="_blank" rel="noopener" href="https://www.twitter.com/thiagomontezum_" aria-label="Thiago Montezuma Twitter">
+        <i class="fab fa-twitter-square"></i>
+      </a>
+    </div>
+    <div class="footer-social-image-container">
+      <a style="color: inherit; outline: none" target="_blank" rel="noopener" href="https://www.github.com/thiagomontezuma" aria-label="Thiago Montezuma Github">
+        <i class="fab fa-github-square"></i>
+      </a>
+    </div>
+    <div class="footer-social-image-container">
+      <a style="color: inherit; outline: none" target="_blank" rel="noopener" href="https://www.linkedin.com/in/thiagomontezuma" aria-label="Thiago Montezuma Linkedin">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <div class="footer-social-image-container">
+      <a style="color: inherit; outline: none" class="footer-links" href="mailto:thiagomdiogenes@gmail.com" aria-label="Thiago Montezuma Email">
+        <i class="fas fa-envelope-square"></i>
+      </a>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <p class="footer-copyright-text">&copy; 2020 Developed by Thiago Montezuma</p>
+  </div>
+</footer>
+  </body>
+</html>

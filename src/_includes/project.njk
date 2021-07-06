@@ -1,0 +1,31 @@
+---
+layout: 'base.njk'
+---
+
+<div id="mainDivBlock">
+  <div class="project-photo-nohover">
+    <a href="{{ projectLink }}" target="_blank">
+      <img class="project-photo-img" src="{{ projectMainImage }}" alt="{{ projectMainImageAlt }}" />
+    </a>
+  </div>
+  <div class="project-paragraph-row">
+    <p class="project-paragraph-p">
+      <a style="color: inherit" href="{{ projectLink }}" target="_blank">{{ projectName }}</a>
+      {{ projectBigDescription }}
+    </p>
+  </div>
+  <hr style="margin: 0 0 25px" />
+  <div class="project-photos-row">
+    <div class="project-photos-img-container-nohover">
+      <a href="{{ projectLink }}" target="_blank">
+        <img class="project-photos-img" src="{{ projectPhoneImage }}" alt="{{ projectPhoneImageAlt }}" />
+      </a>
+    </div>
+    <div class="project-photos-text-container">
+      <p class="project-photos-p">{{ projectListDescriptionTitle }}</p>
+      <ul class="project-photos-ul">
+        {{ projectListDescription }}
+      </ul>
+    </div>
+  </div>
+</div>

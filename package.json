@@ -1,0 +1,15 @@
+{
+	"name": "portfolio-ssg",
+	"version": "1.0.0",
+	"description": "tmd-portfolio-website",
+	"main": ".eleventy.js",
+	"scripts": {
+		"start": "eleventy --serve",
+		"build": "eleventy"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@11ty/eleventy": "^0.12.1"
+	}
+}

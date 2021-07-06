@@ -1,0 +1,31 @@
+---
+title: Contact Me
+layout: 'base.njk'
+---
+
+<div id="mainDivBlock">
+  <div class="contact-call-to-ask">
+    <h2 id="contactCall" class="contact-call">Want to hear more from me?</h2>
+    <p id="contactCallSubheader" class="contact-call-subheader">Send me a message and I will get in touch with you!</p>
+    <p id="contactCallSubheaderLast" class="contact-call-subheader" style="display: none; font-size: 16px !important; margin-top: 8px"></p>
+  </div>
+  <!-- <div class="contact-call-buttons">
+          <button class="contact-call-btn">1</button>
+          <button class="contact-call-btn">2</button>
+          <button class="contact-call-btn">3</button>
+        </div> -->
+  <div id="contactFormDiv" class="contact-form">
+    <div class="contact-form-container">
+      <form id="contactForm" name="Contact Form - Thiago Montezuma Website" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/contact-received.html">
+        <input type="text" id="name" name="name" placeholder="Your Name" required /><br />
+        <input type="email" id="email" name="email" placeholder="Email Address" required /><br />
+        <textarea id="message" name="message" placeholder="Message" required></textarea>
+        <div data-netlify-recaptcha="true"></div>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <!-- <div class="contact-form-image">
+            <img class="contact-form-img" src="/images/placeholder.png" />
+          </div> -->
+  </div>
+</div>

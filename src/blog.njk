@@ -1,0 +1,69 @@
+---
+title: Blog
+layout: 'base.njk'
+---
+
+<div class="blog-div" id="mainDiv">
+  <div class="blog-search">
+    <h2>Type your Question</h2>
+    <input type="text" id="searchBar" name="search" placeholder="Search for..." />
+  </div>
+  <div class="blog-topics">
+    <h2>Or find it in a topic</h2>
+  </div>
+  <div class="blog-topics-container">
+    <button class="blog-topic" id="html">
+      <img src="/images/html-logo.png" />
+      <span>HTML</span>
+    </button>
+    <button class="blog-topic" id="css">
+      <img src="/images/css-logo.png" />
+      <span>CSS</span>
+    </button>
+    <button class="blog-topic" id="javascript">
+      <img src="/images/javascript-logo.png" />
+      <span>JAVASCRIPT</span>
+    </button>
+    <button class="blog-topic" id="react">
+      <img src="/images/react-logo.png" />
+      <span>REACT</span>
+    </button>
+    <button class="blog-topic" id="git">
+      <img src="/images/git-logo.png" />
+      <span>GIT</span>
+    </button>
+  </div>
+
+  <div class="blog-row-card" data-post="1">
+    <a class="blog-row-link" href="/blog/post.html">
+      <div class="blog-row">
+        <div class="blog-row-img-container">
+          <img class="blog-row-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" />
+        </div>
+        <div class="blog-row-title-container">
+          <h2 class="blog-row-title">How to Make a Header</h2>
+        </div>
+        <div class="blog-row-info-container">
+          <p class="blog-row-info">📅 April 23, 2021</p>
+          <p class="blog-row-info">🕐 1 min read</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="blog-row-card" data-post="2">
+    <a class="blog-row-link" href="#">
+      <div class="blog-row">
+        <div class="blog-row-img-container">
+          <img class="blog-row-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" />
+        </div>
+        <div class="blog-row-title-container">
+          <h2 class="blog-row-title">How to Make a Footer</h2>
+        </div>
+        <div class="blog-row-info-container">
+          <p class="blog-row-info">📅 April 23, 2021</p>
+          <p class="blog-row-info">🕐 1 min read</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

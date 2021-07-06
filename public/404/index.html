@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- <meta name="description" content="Thiago Montezuma Personal Website featuring projects worked on, about myself, custom themes, and a way to contact me." /> -->
+<!-- <title>Thiago Montezuma Personal Website</title> -->
+<link rel="stylesheet" href="/css/bootstrap-grid.css" />
+<link rel="stylesheet" href="/css/main.css" />
+
+<!-- Meta tags -->
+<!-- <meta property="og:title" content="Thiago Montezuma Personal Website" />
+<meta property="og:description" content="Thiago Montezuma Personal Website featuring projects worked on, about myself, custom themes, and a way to contact me." />
+<meta property="og:url" content="https://www.thiagomontezuma.com" /> -->
+<!-- <meta property="og:image" content="https://www.thiagomontezuma.com/images/tmdlogo310.png" /> -->
+<meta property="og:locale" content="en_US" />
+<meta name="robots" content="index,follow" />
+<meta name="theme-color" content="#1C1C1C" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F24RSF0Z29"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-F24RSF0Z29');
+</script>
+
+<!-- Web General Icons -->
+<link rel="icon" href="/images/tmdlogo16.png" sizes="16x16" />
+<link rel="icon" href="/images/tmdlogo32.png" sizes="32x32" />
+<link rel="icon" href="/images/tmdlogo48.png" sizes="48x48" />
+<link rel="icon" href="/images/tmdlogo57.png" sizes="57x57" />
+<link rel="icon" href="/images/tmdlogo62.png" sizes="62x62" />
+<link rel="icon" href="/images/tmdlogo76.png" sizes="76x76" />
+<link rel="icon" href="/images/tmdlogo96.png" sizes="96x96" />
+<link rel="icon" href="/images/tmdlogo128.png" sizes="128x128" />
+<link rel="icon" href="/images/tmdlogo192.png" sizes="192x192" />
+<link rel="icon" href="/images/tmdlogo228.png" sizes="228x228" />
+<!-- Android Icon -->
+<link rel="shortcut icon" sizes="196x196" href="/images/tmdlogo196.png" />
+<!-- iOS Icons -->
+<link rel="apple-touch-icon" href="/images/tmdlogo128.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/images/tmdlogo180.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/images/tmdlogo152.png" />
+<link rel="apple-touch-icon" sizes="167x167" href="/images/tmdlogo167.png" />
+<!-- Windows 8 IE 10 Icons -->
+<meta name="msapplication-TileColor" content="#1C1C1C" />
+<meta name="msapplication-TileImage" content="/images/tmdlogo144.png" />
+<!-- Windows 8.1 + IE11 and above -->
+<meta name="msapplication-config" content="/browserconfig.xml" />
+
+<script defer src="https://kit.fontawesome.com/bf1c73beb5.js" crossorigin="anonymous"></script>
+<script defer src="/js/app.js"></script>
+
+<title>Homepage - Thiago Montezuma Personal Website</title>
+<meta name="description"
+  content="Thiago Montezuma Personal Website featuring projects worked on, about myself, custom themes, and a way to contact me." />
+<meta rel="canonical" href="https://www.thiagomontezuma.com" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Homepage - Thiago Montezuma Personal Website" />
+<meta property="og:description"
+  content="Thiago Montezuma Personal Website featuring projects worked on, about myself, custom themes, and a way to contact me." />
+<meta property="og:url" content="https://www.thiagomontezuma.com" />
+<meta property="og:image" content="https://www.thiagomontezuma.com/images/tmdlogo310.png" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Homepage - Thiago Montezuma Personal Website" />
+<meta property="twitter:description"
+  content="Thiago Montezuma Personal Website featuring projects worked on, about myself, custom themes, and a way to contact me." />
+  </head>
+  <body class="dark">
+    <header>
+  <div class="header-logo">
+    <a class="header-links" href="/">
+      <img id="headerLogo" class="header-logo-img" src="/images/logo-black.png" alt="Site-Logo" />
+    </a>
+  </div>
+  <div class="header-nav">
+    <a class="header-links" href="/blog">Blog</a>
+    <a class="header-links" href="/about">About Me</a>
+    <a class="header-links" href="/contact">Contact</a>
+  </div>
+</header>
+    <nav>
+  <ul>
+    <li class="nav-option">
+      <button id="ambientColor" class="nav-button" aria-label="Light Theme">
+        <i class="fas fa-sun nav-i"></i>
+        <span class="nav-text">Light</span>
+      </button>
+    </li>
+    <li class="nav-option">
+      <button id="blog" class="nav-button" aria-label="Blog">
+        <i class="fas fa-file-alt nav-i"></i>
+        <span class="nav-text">Blog</span>
+      </button>
+    </li>
+    <li class="nav-option">
+      <button id="terminal" class="nav-button" value="off" onclick="terminalInit()" aria-label="Terminal Theme">
+        <i class="fas fa-terminal nav-i"></i>
+        <span class="nav-text">Terminal</span>
+      </button>
+    </li>
+    <li class="nav-option">
+      <button id="contact" class="nav-button" aria-label="Contact">
+        <i class="fas fa-comment-dots nav-i"></i>
+        <span class="nav-text">Contact</span>
+      </button>
+    </li>
+  </ul>
+</nav>
+    <main>
+      <div class="terminal-row" id="terminalDiv">
+  <p class="terminal-header">Hi! Type about, contact, or projects for more information. If you feel lost, type help.</p>
+  <p class="terminal-text">client@TMD:~$</p>
+  <input id="terminalInput" class="terminal-input" type="text" onkeydown="terminalEnter(this)" />
+</div>
+      
+<div id="mainDivBlock">
+  <div class="contact-call-to-ask">
+    <h2 id="contactCall" class="contact-call">Ops... Page not found!</h2>
+    <p id="contactCallSubheader" class="contact-call-subheader" style="font-size: 16px; margin-top: 12px">It looks
+      like this page does not exist.</p>
+    <p id="contactCallSubheaderLast" class="contact-call-subheader"
+      style="font-size: 16px !important; margin-top: 6px">Please, return to the home page.</p>
+    <div style="text-align: center; margin-top: 16px">
+      <a href="/">
+        <button class="contact-call-sent-button">Go Back to Home</button>
+      </a>
+    </div>
+  </div>
+</div>
+    </main>
+    <footer>
+  <div class="footer-social">
+    <div class="footer-social-image-container">
+      <a style="color: inherit; outline: none" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCzzchqImnr08Fu3aPcz078Q" aria-label="Thiago Montezuma Youtube Channel">
+        <i class="fab fa-youtube-square"></i>
+      </a>
+    </div>
+    <div class="footer-social-image-container">
+      <a style="color: inherit; outline: none" target="_blank" rel="noopener" href="https://www.instagram.com/thiagomontezuma_" aria-label="Thiago Montezuma Instagram">
+        <i class="fab fa-instagram-square"></i>
+      </a>
+    </div>
+    <div class="footer-social-image-container">
+      <a style="color: inherit; outline: none" target="_blank" rel="noopener" href="https://www.twitter.com/thiagomontezum_" aria-label="Thiago Montezuma Twitter">
+        <i class="fab fa-twitter-square"></i>
+      </a>
+    </div>
+    <div class="footer-social-image-container">
+      <a style="color: inherit; outline: none" target="_blank" rel="noopener" href="https://www.github.com/thiagomontezuma" aria-label="Thiago Montezuma Github">
+        <i class="fab fa-github-square"></i>
+      </a>
+    </div>
+    <div class="footer-social-image-container">
+      <a style="color: inherit; outline: none" target="_blank" rel="noopener" href="https://www.linkedin.com/in/thiagomontezuma" aria-label="Thiago Montezuma Linkedin">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <div class="footer-social-image-container">
+      <a style="color: inherit; outline: none" class="footer-links" href="mailto:thiagomdiogenes@gmail.com" aria-label="Thiago Montezuma Email">
+        <i class="fas fa-envelope-square"></i>
+      </a>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <p class="footer-copyright-text">&copy; 2020 Developed by Thiago Montezuma</p>
+  </div>
+</footer>
+  </body>
+</html>
